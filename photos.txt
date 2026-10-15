@@ -1,0 +1,8 @@
+london-aerial.jpg https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=2400&q=82&fm=jpg
+oxford.jpg https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=2400&q=82&fm=jpg
+zurich-dusk.jpg https://images.unsplash.com/photo-1783713851566-d215ba93bd78?w=2400&q=82&fm=jpg
+geneva-jet-deau.jpg https://images.unsplash.com/photo-1633022326182-1b36700bc49a?w=2400&q=82&fm=jpg
+geneva-aerial.jpg https://images.unsplash.com/photo-1584200463394-bba4b2117e4d?w=2400&q=82&fm=jpg
+toronto-sunset.jpg https://images.unsplash.com/photo-1507992781348-310259076fe0?w=2400&q=82&fm=jpg
+sydney-opera.jpg https://images.unsplash.com/photo-1771760171302-2d60b9a3576f?w=2400&q=82&fm=jpg
+harvard-dusk.jpg https://images.unsplash.com/photo-1779111718029-74f262657398?w=2400&q=82&fm=jpg

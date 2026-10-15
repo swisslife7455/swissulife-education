@@ -1,0 +1,27 @@
+name: Fetch photos
+on:
+  push:
+    paths: ['photos.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download photos listed in photos.txt (name url per line)
+        run: |
+          mkdir -p photos/raw
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            [ -f "photos/raw/$name" ] && continue
+            curl -sSL --fail -o "photos/raw/$name" "$url"
+          done < photos.txt
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add photos/raw
+          git diff --cached --quiet || git commit -m "Add downloaded photos"
+          git push
